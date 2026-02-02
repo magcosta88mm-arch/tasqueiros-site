@@ -258,33 +258,26 @@ button:hover {
   margin-top: 10px;
   font-weight: bold;
 }
-/* ÍCONES SOCIAIS */
 .social-icons {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 25px;
   margin-top: 30px;
 }
 
 .social-icons a {
-  width: 42px;
-  height: 42px;
+  width: 36px;
+  height: 36px;
   background-color: #000;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 0.3s, transform 0.2s;
 }
 
-.social-icons a:hover {
-  background-color: #333;
-  transform: scale(1.08);
+.social-icons img {
+  width: 18px;
+  height: 18px;
 }
 
-.social-icons svg {
-  width: 20px;
-  height: 20px;
-  fill: #fff;
-}
 
