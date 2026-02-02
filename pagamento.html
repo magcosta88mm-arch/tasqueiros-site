@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Pagamento | Tasqueiros Sem Lei</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="eventos.html">Eventos</a>
+  </nav>
+</header>
+
+<div class="page-content">
+
+  <section class="home">
+    <h1>Pagamento MB Way</h1>
+    <p>Confirma os dados e procede ao pagamento</p>
+  </section>
+
+  <section class="form-container">
+    <p><strong>Nome:</strong> <span id="nome"></span></p>
+    <p><strong>Equipa:</strong> <span id="equipa"></span></p>
+
+    <hr>
+
+    <p><strong>Estado:</strong> <span style="color:orange;">Pagamento pendente</span></p>
+
+    <p style="margin-top:20px;">
+      ⚠️ O pagamento MB Way ainda não está ativo.<br>
+      Esta página já está preparada para quando a IfthenPay for ativada.
+    </p>
+  </section>
+
+</div>
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+  document.getElementById("nome").textContent = params.get("nome");
+  document.getElementById("equipa").textContent = params.get("equipa");
+</script>
+
+</body>
+</html>
